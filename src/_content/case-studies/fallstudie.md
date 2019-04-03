@@ -1,6 +1,6 @@
 ---
 pageTitle: Visualisierung PM
-title: Fallstudie
+title: Applikation
 description: >-
   Das Auge arbeitet mit – Originelles Projektmanagement für einen
   Sensor-Hersteller
