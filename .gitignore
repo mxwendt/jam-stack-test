@@ -1,0 +1,7 @@
+# Folders to ignore
+
+.idea/
+node_modules/
+www/
+
+# Files to ignore

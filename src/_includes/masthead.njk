@@ -1,0 +1,8 @@
+<header>
+    <a rel="home" href="/">Home</a>
+    <ul>
+        {%- for item in navigation %}
+            <li><a href="{{ item.url }}">{{ item.label }}</a></li>
+        {%- endfor  %}
+    </ul>
+</header>

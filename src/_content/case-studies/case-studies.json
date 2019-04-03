@@ -1,0 +1,6 @@
+{
+	"layout": "layouts/case-study.njk",
+	"permalink": "fallstudien/{{ page.fileSlug }}.html",
+	"tags": ["caseStudy"],
+	"backlink": "/fallstudien"
+}

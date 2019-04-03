@@ -1,0 +1,18 @@
+{
+  "name": "eleventy-test",
+  "version": "1.0.0",
+  "description": "static site with eleventy",
+  "main": "index.js",
+  "scripts": {
+    "prebuild": "rm -rf www",
+    "build": "npm run prebuild && eleventy",
+    "serve": "npm run prebuild && eleventy --serve",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "mawe",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@11ty/eleventy": "^0.7.1"
+  }
+}

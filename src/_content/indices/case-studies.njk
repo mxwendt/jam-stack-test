@@ -1,0 +1,12 @@
+---
+pageTitle: Fallstudien
+permalink: fallstudien/index.html
+layout: layouts/case-study.njk
+---
+
+{% for item in collections.caseStudy %}
+    <a href="{{ item.url }}" class="teaser-card">
+        <h3>{{ item.data.title }}</h3>
+        <p>{{ item.data.description }}</p>
+    </a>
+{% endfor %}
