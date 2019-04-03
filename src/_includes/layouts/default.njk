@@ -5,6 +5,8 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>{{ pageTitle }}</title>
         <link rel="stylesheet" href="../assets/styles/main.css">
+        <!-- include Netlify Identity for authentication -->
+        <script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
         <style>
             body {
                 background-color: blanchedalmond;
@@ -15,5 +17,16 @@
         {% include "masthead.njk" %}
         <h1>{{ pageTitle }}</h1>
         {{ content | safe }}
+        <script>
+			if (window.netlifyIdentity) {
+				window.netlifyIdentity.on("init", user => {
+					if (!user) {
+						window.netlifyIdentity.on("login", () => {
+							document.location.href = "/admin/";
+						});
+					}
+				});
+			}
+        </script>
     </body>
 </html>
