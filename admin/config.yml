@@ -2,3 +2,19 @@ backend:
   name: bitbucket
   repo: re-lounge/re-lounge_eleventy-test
   branch: master
+
+media_folder: "static/uploads"
+public_folder: "/static/uploads"
+
+collections:
+  - name: "case-studies" # used in routes, i.e. /admin/collections/case-studies
+    label: "Fallstudien" # used in the user interface
+    folder: "src/_content/case-studies" # the path to the folder where the documents are stored
+    create: true # allow users to create new documents in this collection
+    slug: "{{slug}}" # filename template, i.e. title.md
+    fields: # the fields for each document, in front matter
+      - {label: "Page Title", name: "pageTitle", widget: "string", default: "Page Title"}
+      - {label: "Title", name: "title", widget: "string", default: "Fallstudie"}
+      - {label: "Description", name: "description", widget: "string"}
+      - {label: "Date", name: "date", widget: "date", format: "YYYY-MM-DD"}
+      - {label: "Content", name: "body", widget: "markdown"}

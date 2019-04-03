@@ -19,6 +19,7 @@ module.exports = function (config) {
 	});
 
 	config.addPassthroughCopy("admin");
+	config.addPassthroughCopy("static/uploads");
 
 	// return the 11ty configuration
 	return {
