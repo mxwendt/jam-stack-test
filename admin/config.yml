@@ -15,7 +15,7 @@ collections:
         file: "src/_content/pages/foo.json"
         fields:
           - {label: "Page Title", name: "pageTitle", widget: "string", default: "Foobar"}
-          - {label: "body", name: "body", widget: "markdown"}
+          - {label: "body", name: "body", widget: "text"}
   - name: "case-studies" # used in routes, i.e. /admin/collections/case-studies
     label: "Fallstudien" # used in the user interface
     folder: "src/_content/case-studies" # the path to the folder where the documents are stored
