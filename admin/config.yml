@@ -10,11 +10,13 @@ collections:
   - name: "pages"
     label: "Pages"
     files:
-      - name: "contact"
-        label: "Kontakt"
-        file: "src/_content/pages/contact.njk"
+      - name: "foo"
+        label: "Foo"
+        file: "src/_content/pages/foo.md"
         fields:
           - {label: "Page Title", name: "pageTitle", widget: "string", default: "Kontakt"}
+          - {label: "Permalink", name: "permalink", widget: "string", default: "/foo/index.html"}
+          - {label: "Content", name: "body", widget: "markdown"}
   - name: "case-studies" # used in routes, i.e. /admin/collections/case-studies
     label: "Fallstudien" # used in the user interface
     folder: "src/_content/case-studies" # the path to the folder where the documents are stored
