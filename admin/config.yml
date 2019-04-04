@@ -7,6 +7,14 @@ media_folder: "static/uploads"
 public_folder: "/static/uploads"
 
 collections:
+  - name: "pages"
+    label: "Pages"
+    files:
+      - name: "contact"
+        label: "Kontakt"
+        file: "src/_content/pages/contact.njk"
+        fields:
+          - {label: "Page Title", name: "pageTitle", widget: "string", default: "Kontakt"}
   - name: "case-studies" # used in routes, i.e. /admin/collections/case-studies
     label: "Fallstudien" # used in the user interface
     folder: "src/_content/case-studies" # the path to the folder where the documents are stored
