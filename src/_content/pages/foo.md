@@ -1,5 +1,5 @@
 ---
-pageTitle: Foo
+pageTitle: Foobar
 permalink: /foo/index.html
-layout: layouts/default.njk
 ---
+Dieser Inhalt wurde mit dem Netlify CMS gepflegt.
