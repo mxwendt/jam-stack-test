@@ -1,4 +1,4 @@
 {
   "pageTitle": "Foo",
-  "body": "Dieser Inhalt wurde mit dem **Netlify CMS** gepflegt."
+  "body": "<p>Dieser Inhalt wurde mit dem <b>Netlify CMS</b> gepflegt.</p>"
 }
